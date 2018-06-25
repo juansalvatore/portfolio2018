@@ -1,0 +1,166 @@
+html, body 
+  margin: 0
+  padding: 0
+
+*
+  box-sizing: border-box
+  font-family: roboto
+
+a
+  color: #21b6d4
+  text-decoration: none
+
+li 
+  list-style-type: none
+
+ul 
+  padding: 25px
+  margin: 0
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  width: 1240px
+  z-index: 20
+
+h1
+  font:
+    weight: 200
+
+
+h4
+  margin-left: 10px
+  font-weight: 400
+  margin-top: 30px
+  font-size: 20px
+
+p
+  margin: 0
+  
+.project_description
+  opacity: 0
+  transition: all ease-in-out 350ms
+  transform: translateY(-40%)
+  margin-top: 15px
+  margin-left: 10px
+  font:
+    weight: 200
+    size: 17px
+  width: 300px
+  line-height: 25px
+
+.black_background
+  position: relative
+  width: 100%
+  height: 100%
+  background-color: rgb(0,0,0)
+  z-index: 10
+  transition: all ease-in-out 300ms
+  opacity: 0
+
+  &:hover
+    cursor: pointer
+
+.project_container
+  background-color: white
+  width: 380px
+  height: 380px
+  overflow: hidden
+
+  &:hover
+    cursor: pointer
+
+    .project_description
+      opacity: 1  
+      transform: translateY(0%)
+
+    .black_background
+      opacity: 0.7
+
+    img
+      transform: scale(1.1)
+
+    #black
+      color: white
+
+  img
+    position: relative
+    width: 100%
+    height: 100%
+    top: -380px
+    transition: all ease-in-out 400ms
+
+  
+
+.project_text
+  opacity: 1
+  position: absolute
+  z-index: 70
+  color: white
+  padding: 30px
+  transition: all ease-in-out 300ms
+
+
+.ul_container
+  width: 100%
+  display: flex 
+  justify-content: center 
+  margin-top: 100px
+
+.container
+  display: flex
+  justify-content: center
+  width: 100%
+ 
+.nav
+  margin-bottom: 35px
+
+.container_center
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 1184px
+  padding-left: 20px
+  padding-right: 20px
+
+.social-link
+  margin-left: 20px
+  transition: all ease-in-out 140ms
+
+  &:hover
+    opacity: 0.5
+
+.experience_container
+  display: flex
+  flex-direction: column
+
+strong
+  font: 
+    weight: 500
+
+.experience
+  width: 1140px
+  margin-right: 20px
+  margin-left: 20px
+  padding-top: 20px
+  padding-bottom: 20px
+  box-shadow: 0 0 18px rgba(0,0,0,0.1)
+  border-radius: 5px
+  
+
+.section_title
+  font:
+    weight: 500
+  margin-bottom: 20px
+  text-transform: uppercase
+
+.experience_title
+  font:
+    weight: 400
+
+.experience_description
+  font:
+    weight: 200
+
+#black
+  color: black
+  transition: all ease-in-out 140ms
