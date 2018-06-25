@@ -37,7 +37,7 @@ export default class Navbar extends Component {
               </a>
               {/* medium */}
               <a
-                href="https://medium.com/@lndgalante"
+                href="https://medium.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
