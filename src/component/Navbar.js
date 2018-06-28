@@ -3,10 +3,10 @@ import React, { Component } from 'react'
 export default class Navbar extends Component {
   render() {
     return (
-      <div class="nav">
-        <div class="container">
-          <div class="container_center">
-            <h1 class="title">Juan Salvatore</h1>
+      <div className="nav">
+        <div className="container">
+          <div className="container_center">
+            <h1 className="title">Juan Salvatore</h1>
             <span>
               {/* github */}
               <a
@@ -15,7 +15,7 @@ export default class Navbar extends Component {
                 rel="noopener noreferrer"
               >
                 <img
-                  class="social-link"
+                  className="social-link"
                   src="./images/github.svg"
                   alt="github"
                 />
@@ -26,14 +26,22 @@ export default class Navbar extends Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img class="social-link" src="./images/twitter.svg" alt="" />
+                <img
+                  className="social-link"
+                  src="./images/twitter.svg"
+                  alt=""
+                />
               </a>
               {/* mail */}
               <a
                 href="mailto:juansalvatore.ar@gmail.com"
                 rel="noopener noreferrer"
               >
-                <img class="social-link" src="./images/mail.svg" alt="mail" />
+                <img
+                  className="social-link"
+                  src="./images/mail.svg"
+                  alt="mail"
+                />
               </a>
               {/* medium */}
               <a
@@ -42,7 +50,7 @@ export default class Navbar extends Component {
                 rel="noopener noreferrer"
               >
                 <img
-                  class="social-link"
+                  className="social-link"
                   src="./images/medium.svg"
                   alt="https://medium.com/@juansalvatore.ar"
                 />

@@ -5,12 +5,11 @@ class Experience extends Component {
   displayExperience() {
     return this.props.experience.map(item => {
       return (
-        <div class="experience_container">
-          <span class="experience_description">
+        <div className="experience_container" key={item.title}>
+          <span className="experience_description">
             I'm a JavaScript developer based in Buenos Aires working with
             React/Redux, D3 and Cartojs at the
             <a
-              rel="stylesheet"
               target="_blank"
               rel="noopener noreferrer"
               href="http://datos.gob.ar/"
@@ -36,10 +35,10 @@ class Experience extends Component {
 
   render() {
     return (
-      <div class="container ">
-        <div class="container_center experience">
+      <div className="container">
+        <div className="container_center experience">
           <div>
-            <div class="section_title">about me</div>
+            <div className="section_title">about me</div>
             <div>{this.displayExperience()}</div>
           </div>
         </div>
@@ -52,9 +51,4 @@ const mapStateToProps = state => ({
   experience: state.experience,
 })
 
-const mapDispatchToProps = {}
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Experience)
+export default connect(mapStateToProps)(Experience)

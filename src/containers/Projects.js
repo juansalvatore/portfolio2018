@@ -4,18 +4,19 @@ import { connect } from 'react-redux'
 export class Projects extends Component {
   renderList() {
     return this.props.projects.map(project => {
+      const { title, color, description, img } = project
       return (
-        <li class="project_container" key={project.title}>
-          <div class="project_text">
-            <h4 id={project.color} class="project_title">
-              {project.title.toUpperCase()}
+        <li className="project_container" key={title}>
+          <div className="project_text">
+            <h4 id={color} className="project_title">
+              {title.toUpperCase()}
             </h4>
-            <div class="project_description">
-              <p>{project.description}</p>
+            <div className="project_description">
+              <p>{description}</p>
             </div>
           </div>
-          <div class="black_background" />
-          <img src={project.img} alt={project.title} />
+          <div className="black_background" />
+          <img src={img} alt={title} />
         </li>
       )
     })
@@ -23,7 +24,7 @@ export class Projects extends Component {
 
   render() {
     return (
-      <div class="ul_container">
+      <div className="ul_container">
         <ul>{this.renderList()}</ul>
       </div>
     )
