@@ -6,7 +6,7 @@ export default class Navbar extends Component {
       <div class="nav">
         <div class="container">
           <div class="container_center">
-            <h1 class="title">Juan Salvatore </h1>
+            <h1 class="title">Juan Salvatore</h1>
             <span>
               {/* github */}
               <a
@@ -37,11 +37,15 @@ export default class Navbar extends Component {
               </a>
               {/* medium */}
               <a
-                href="https://medium.com/"
+                href="https://medium.com/@juansalvatore.ar"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img class="social-link" src="./images/medium.svg" alt="" />
+                <img
+                  class="social-link"
+                  src="./images/medium.svg"
+                  alt="https://medium.com/@juansalvatore.ar"
+                />
               </a>
             </span>
           </div>

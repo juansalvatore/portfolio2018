@@ -16,7 +16,7 @@ class Experience extends Component {
               href="http://datos.gob.ar/"
             >
               {' '}
-              Ministery of Modernization of Argentina
+              Ministry of Modernization of Argentina
             </a>.
             <br />
             My{' '}
