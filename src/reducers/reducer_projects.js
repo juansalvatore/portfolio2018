@@ -14,7 +14,7 @@ export default function() {
       description:
         'Web app to visualize Google Calendar events by clicking on Argentinian provinces. Built with Vuejs and Cartojs.',
       link: 'https://datosgobar.github.io/mapa-eventos/',
-      github: 'https://github.com/datosgobar/mapa-eventos',
+      github: '',
       img: './images/img_eventos.jpg',
       color: 'black',
     },

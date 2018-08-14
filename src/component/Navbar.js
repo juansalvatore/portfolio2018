@@ -15,7 +15,7 @@ export default class Navbar extends Component {
                 rel="noopener noreferrer"
               >
                 <img
-                  className="social-link"
+                  className="social-link social-github"
                   src="./images/github.svg"
                   alt="github"
                 />

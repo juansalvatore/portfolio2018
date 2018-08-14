@@ -185,3 +185,61 @@ strong {
   color: black;
   transition: all ease-in-out 140ms;
 }
+
+.links {
+  text-align: left;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.links a {
+  margin-right: 20px;
+}
+
+@media (max-width: 450px) {
+  .nav .container_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .title {
+    text-align: center;
+  }
+  .social-github {
+    margin: 0px;
+  }
+  ul {
+    padding: unset;
+  }
+  .project_description {
+    font-size: 15px;
+  }
+  .project_container {
+    width: 320px;
+    height: 320px;
+  }
+  .project_container img {
+    top: -320px;
+  }
+  .project_text {
+    padding: unset;
+  }
+  ul {
+    padding-left: 0px;
+  }
+  ul .project_container p {
+    width: 90%;
+    margin-left: 15px;
+  }
+  h4 {
+    margin-left: 25px;
+  }
+  .links {
+    margin-left: 15px;
+  }
+  #black {
+    width: 90%;
+    margin-left: 25px;
+  }
+}
