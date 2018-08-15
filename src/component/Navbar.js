@@ -1,9 +1,19 @@
 import React, { Component } from 'react'
 
 export default class Navbar extends Component {
+  state = {
+    loadedNavbar: false,
+  }
+  handleNavbarLoaded = () => {
+    this.setState({ loadedNavbar: true })
+  }
+
   render() {
     return (
-      <div className="nav">
+      <div
+        className={this.state.loadedNavbar ? 'nav fade_in' : 'hide'}
+        onLoad={this.handleNavbarLoaded}
+      >
         <div className="container">
           <div className="container_center">
             <h1 className="title">Juan Salvatore</h1>
