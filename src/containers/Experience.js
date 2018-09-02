@@ -16,13 +16,13 @@ class Experience extends Component {
             >
               {' '}
               Ministry of Modernization of Argentina
-            </a>.
-            <br />
+            </a>
+            .<br />
             My{' '}
             <a
               rel="stylesheet"
               target="_blank"
-              href="./images/juan_salvatore_cv.pdf"
+              href="./images/juansalvatore_cv_en.pdf"
             >
               CV
             </a>{' '}

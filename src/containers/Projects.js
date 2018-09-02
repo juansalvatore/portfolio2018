@@ -22,7 +22,7 @@ export class Projects extends Component {
             <div className="project_description" onClick="">
               <p>{description}</p>
               <div className="links">
-                {github == '' ? (
+                {github === '' ? (
                   ''
                 ) : (
                   <a href={github} target="_blank">
