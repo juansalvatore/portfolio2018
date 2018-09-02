@@ -76,6 +76,15 @@ p {
   line-height: 25px;
 }
 
+.no_hover {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  transition: all ease-in-out 300ms;
+  opacity: 0;
+}
+
 .black_background {
   position: relative;
   width: 100%;
@@ -118,12 +127,21 @@ p {
   color: white;
 }
 
+.project_container:hover #red {
+  opacity: 0;
+}
+
 .project_container img {
   position: relative;
   width: 100%;
   height: 100%;
   top: -380px;
   transition: all ease-in-out 400ms;
+}
+
+#red {
+  color: #ec4640 !important;
+  transition: all ease-in-out 300ms;
 }
 
 .project_text {

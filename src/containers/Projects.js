@@ -16,27 +16,41 @@ export class Projects extends Component {
       return (
         <li className="project_container" key={title} onClick="">
           <div className="project_text">
-            <h4 id={color} className="project_title">
+            <h4
+              id={color}
+              className={
+                description === '' ? 'project_title_fixed' : 'project_title'
+              }
+            >
               {title.toUpperCase()}
             </h4>
             <div className="project_description" onClick="">
               <p>{description}</p>
-              <div className="links">
-                {github === '' ? (
-                  ''
-                ) : (
-                  <a href={github} target="_blank">
-                    GitHub
-                  </a>
-                )}
-                <a href={link} target="_blank">
-                  Website
-                </a>
-              </div>
+              {description === '' ? (
+                ''
+              ) : (
+                <div className="links">
+                  {github === '' ? (
+                    ''
+                  ) : (
+                    <a href={github} target="_blank">
+                      GitHub
+                    </a>
+                  )}
+                  {link === '' ? (
+                    ''
+                  ) : (
+                    <a href={link} target="_blank">
+                      Website
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
           </div>
-
-          <div className="black_background" />
+          <div
+            className={description !== '' ? 'black_background' : 'no_hover'}
+          />
 
           <img src={img} alt={title} onLoad={this.handleImageLoaded} />
         </li>

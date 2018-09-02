@@ -1,6 +1,24 @@
 export default function() {
   return [
     {
+      title: 'POPBOT',
+      description:
+        'Telegram bot programmed with JavaScript and Clasp for Casa Rosada’s internal reports, with President Mauricio Macri and Marcos Peña (Chief of staff) as main users.',
+      link: '',
+      github: '',
+      img: './images/popbot.jpg',
+      color: 'white',
+    },
+    {
+      title: 'IODC',
+      description:
+        'International website for IODC (International Open Data Conference). Programmed with React and Redux.',
+      link: 'https://www.opendatacon.org/',
+      github: 'https://github.com/juansalvatore/iodc_2018',
+      img: './images/iodc.jpg',
+      color: 'white',
+    },
+    {
       title: 'Flights',
       description:
         'Website for showing all the flights that left or landed in Argentinian airports on a year using CartoDB, CartoJS, post GIS and JavaScript.',
@@ -27,20 +45,20 @@ export default function() {
       color: 'white',
     },
     {
+      title: 'Digital House final project',
+      description: `Digital House's Full Stack coding bootcamp final project. Paired programmed in PHP (Laravel), Vuejs and JavaScript.`,
+      link: 'http://we-project.herokuapp.com/',
+      github: 'https://github.com/juansalvatore/proyectoDH',
+      img: './images/img_dh.jpg',
+      color: 'white',
+    },
+    {
       title: 'Aerolab coding challenge',
       description:
         'My solution in React and Redux for the 2017 "Aerolab Coding Challenge".',
       link: 'https://aerolab.herokuapp.com/',
       github: 'https://github.com/juansalvatore/acc',
       img: './images/img_1.jpg',
-      color: 'white',
-    },
-    {
-      title: 'Digital House final project',
-      description: `Digital House's Full Stack coding bootcamp final project. Paired programmed in PHP (Laravel), Vuejs and JavaScript.`,
-      link: 'http://we-project.herokuapp.com/',
-      github: 'https://github.com/juansalvatore/proyectoDH',
-      img: './images/img_dh.jpg',
       color: 'white',
     },
     {
@@ -51,6 +69,14 @@ export default function() {
       github: 'https://github.com/datosgobar/andino-landing-producto',
       img: './images/img_andino.jpg',
       color: 'white',
+    },
+    {
+      title: 'Coding new projects!',
+      description: '',
+      link: '',
+      github: '',
+      img: 'https://i.gifer.com/Bm7L.gif',
+      color: 'red',
     },
   ]
 }
