@@ -22,7 +22,7 @@ class Experience extends Component {
             <a
               rel="stylesheet"
               target="_blank"
-              href="./images/juansalvatore_cv_en.pdf"
+              href="/images/juansalvatore_cv_en.pdf"
             >
               CV
             </a>{' '}
